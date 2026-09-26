@@ -35,12 +35,12 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
               >
                 <img
                   src="/app-icon.png"
-                  alt="Xtreamium"
+                  alt="TV Noms"
                   width="24"
                   height="24"
                   className="object-contain"
                 />
-                <span className="text-lg font-semibold">Xtreamium</span>
+                <span className="text-lg font-semibold">TV Noms</span>
               </Link>
             </div>
 

@@ -95,7 +95,7 @@ const RecordingsPage: React.FC = () => {
             </div>
             <a
               className="font-bold text-primary"
-              href="https://github.com/fergalmoran/xtreamium/#installmpv"
+              href="https://github.com/tvnoms/tvnoms/#installmpv"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -114,7 +114,7 @@ const RecordingsPage: React.FC = () => {
           <div>🚫 Unable to play recording!</div>
           <div>
             <a
-              href="https://github.com/xtreamium/xtreamium-proxy/"
+              href="https://github.com/tvnoms/tvnoms-proxy/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"

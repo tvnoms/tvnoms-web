@@ -97,7 +97,7 @@ export const useRecordingNotifications = () => {
             body: `${recording.title} - recording until ${formatTime(
               recording.endTime
             )}`,
-            tag: `xtreamium-recording-${recording.id}-started`,
+            tag: `tvnoms-recording-${recording.id}-started`,
             onClick: openRecordings,
           });
         }
@@ -115,7 +115,7 @@ export const useRecordingNotifications = () => {
         showDesktopNotification({
           title: message.title,
           body: message.body(recording.title),
-          tag: `xtreamium-recording-${recording.id}-finished`,
+          tag: `tvnoms-recording-${recording.id}-finished`,
           onClick: openRecordings,
         });
       }

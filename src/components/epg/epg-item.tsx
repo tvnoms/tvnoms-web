@@ -76,7 +76,7 @@ const EpgItem: React.FC<EpgItemProps> = ({
             <div>Unable to schedule recording!</div>
             <div>
               <a
-                href="https://github.com/xtreamium/xtreamium-proxy/"
+                href="https://github.com/tvnoms/tvnoms-proxy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"

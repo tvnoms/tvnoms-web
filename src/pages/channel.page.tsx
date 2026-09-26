@@ -256,7 +256,7 @@ const ChannelPage = () => {
               </div>
               <a
                 className="font-bold text-primary"
-                href="https://github.com/fergalmoran/xtreamium/#installmpv"
+                href="https://github.com/tvnoms/tvnoms/#installmpv"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -306,7 +306,7 @@ const ChannelPage = () => {
               <div>🚫 Unable to play stream!</div>
               <div>
                 <a
-                  href="https://github.com/xtreamium/xtreamium-proxy/"
+                  href="https://github.com/tvnoms/tvnoms-proxy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline"
@@ -534,7 +534,7 @@ const ChannelPage = () => {
                       <Button
                         size="sm"
                         variant="default"
-                        title="Play to xtreamium local proxy"
+                        title="Play to TV Noms local proxy"
                         onClick={() => void playStream(stream.stream_id)}
                         className="gap-1.5 h-8 px-2 text-xs"
                       >

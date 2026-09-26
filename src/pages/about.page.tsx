@@ -7,7 +7,7 @@ function AboutPage() {
       // Simulate fetching app information
       await new Promise(resolve => setTimeout(resolve, 1000))
       return {
-        name: 'Xtreamium',
+        name: 'TV Noms',
         version: '1.0.0',
         description: 'IPTV streaming application with local proxy support',
         features: [

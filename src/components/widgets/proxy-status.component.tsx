@@ -127,7 +127,7 @@ const ProxyStatus: React.FC = () => {
                 {versionsQuery.data?.latest}
               </p>
               <a
-                href="https://github.com/xtreamium/xtreamium-proxy/releases"
+                href="https://github.com/tvnoms/tvnoms-proxy/releases"
                 target="_blank"
                 rel="noreferrer"
                 className="underline"

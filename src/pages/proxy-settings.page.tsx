@@ -151,7 +151,7 @@ const ProxySettingsPage: React.FC = () => {
               What's all this about?
             </AlertTitle>
             <AlertDescription className="text-blue-800 dark:text-blue-200">
-              A local proxy is required so that xtreamium can do things a
+              A local proxy is required so that TV Noms can do things a
               browser is not allowed to - such as recording streams, transcoding
               video, and using custom media players.
             </AlertDescription>

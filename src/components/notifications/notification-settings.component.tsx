@@ -75,7 +75,7 @@ export const NotificationSettings: React.FC = () => {
     if (checked && canPrompt) {
       const result = await request();
       if (result !== "granted") {
-        toast("Xtreamium won't be able to notify you until you allow it.");
+        toast("TV Noms won't be able to notify you until you allow it.");
       }
     }
   };
@@ -94,9 +94,9 @@ export const NotificationSettings: React.FC = () => {
 
   const handleTestNotification = () => {
     const shown = showDesktopNotification({
-      title: "Xtreamium",
+      title: "TV Noms",
       body: "Desktop notifications are working.",
-      tag: "xtreamium-test-notification",
+      tag: "tvnoms-test-notification",
     });
     if (!shown) {
       toast.error("Your browser wouldn't show the notification.");
@@ -113,7 +113,7 @@ export const NotificationSettings: React.FC = () => {
           Desktop Notifications
         </CardTitle>
         <CardDescription>
-          Get told when a recording starts or finishes, even when Xtreamium isn't
+          Get told when a recording starts or finishes, even when TV Noms isn't
           the window you're looking at.
         </CardDescription>
       </CardHeader>
@@ -134,7 +134,7 @@ export const NotificationSettings: React.FC = () => {
             <AlertTitle>Not available over an insecure connection</AlertTitle>
             <AlertDescription>
               Browsers only allow notifications on https (or localhost). Open
-              Xtreamium over https to use them.
+              TV Noms over https to use them.
             </AlertDescription>
           </Alert>
         )}
@@ -145,7 +145,7 @@ export const NotificationSettings: React.FC = () => {
             <AlertTitle>Notifications are blocked</AlertTitle>
             <AlertDescription className="block! space-y-3">
               <p>
-                Your browser is refusing notifications for Xtreamium, so nothing
+                Your browser is refusing notifications for TV Noms, so nothing
                 will appear while a recording runs.
               </p>
               {showUnblockHelp && <NotificationUnblockHelp />}
@@ -183,7 +183,7 @@ export const NotificationSettings: React.FC = () => {
             </AlertTitle>
             <AlertDescription className="block! space-y-3 text-amber-800 dark:text-amber-200">
               <p>
-                Xtreamium still needs your permission before it can show
+                TV Noms still needs your permission before it can show
                 anything.
               </p>
               <Button

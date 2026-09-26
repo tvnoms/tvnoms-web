@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <div className="container grid px-6 mx-auto">
       <h1 className="my-6 text-2xl font-semibold text-foreground">
-        Welcome to xtreamium
+        Welcome to TV Noms
       </h1>
 
       <Alert className="mb-8">

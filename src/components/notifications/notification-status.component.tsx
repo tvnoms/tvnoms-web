@@ -78,8 +78,8 @@ export const NotificationStatus: React.FC = () => {
           </p>
           <p className="text-sm text-muted-foreground">
             {isBlocked
-              ? "Your browser is refusing notifications for Xtreamium, so you won't hear when a recording starts or finishes."
-              : "Xtreamium needs your permission before it can tell you when a recording starts or finishes."}
+              ? "Your browser is refusing notifications for TV Noms, so you won't hear when a recording starts or finishes."
+              : "TV Noms needs your permission before it can tell you when a recording starts or finishes."}
           </p>
         </div>
 

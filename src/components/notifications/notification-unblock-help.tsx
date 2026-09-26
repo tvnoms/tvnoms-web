@@ -17,7 +17,7 @@ export const NotificationUnblockHelp: React.FC = () => (
     </li>
     <li>
       Set it to <span className="font-medium">Allow</span>, or reset the
-      permission so Xtreamium can ask again.
+      permission so TV Noms can ask again.
     </li>
     <li>Reload the page.</li>
   </ol>

@@ -1,6 +1,6 @@
 /**
  * Status as reported by the proxy. Mirrors Recording.Status in
- * xtreamium-proxy/Data/Models/Recording.cs — keep the two in step.
+ * tvnoms-proxy/Data/Models/Recording.cs — keep the two in step.
  */
 export type RecordingStatus =
   | "pending"

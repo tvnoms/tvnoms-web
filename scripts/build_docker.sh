@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Build Docker image for xtreamium-web
+# Build Docker image for tvnoms-web
 # Usage: ./build_docker.sh [tag] [run_mode]
 # 
 # Arguments:
-#   tag      - Docker image tag (default: xtreamium-web:latest)
+#   tag      - Docker image tag (default: tvnoms-web:latest)
 #   run_mode - Build mode: production or development (default: production)
 
 set -e
 
 # Default values
-DEFAULT_TAG="ghcr.io/xtreamium/xtreamium-web:latest"
+DEFAULT_TAG="ghcr.io/tvnoms/tvnoms-web:latest"
 DEFAULT_RUN_MODE="production"
 
 # Parse arguments

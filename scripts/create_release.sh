@@ -283,21 +283,21 @@ Release v$NEW_VERSION
 ### Changes since v$CURRENT_VERSION:
 $(git log v$CURRENT_VERSION..HEAD --pretty=format:'- %s (%h)' --no-merges)
 
-**Full Changelog**: https://github.com/xtreamium/xtreamium-web/compare/v$CURRENT_VERSION...v$NEW_VERSION"
+**Full Changelog**: https://github.com/tvnoms/tvnoms-web/compare/v$CURRENT_VERSION...v$NEW_VERSION"
 
     if gh release create "v$NEW_VERSION" \
         --title "Release v$NEW_VERSION" \
         --notes "$RELEASE_NOTES" \
         --latest; then
         print_success "GitHub release v$NEW_VERSION created successfully"
-        print_status "Release URL: https://github.com/xtreamium/xtreamium-web/releases/tag/v$NEW_VERSION"
+        print_status "Release URL: https://github.com/tvnoms/tvnoms-web/releases/tag/v$NEW_VERSION"
     else
         print_error "Failed to create GitHub release. You can create it manually at:"
-        print_error "https://github.com/xtreamium/xtreamium-web/releases/new?tag=v$NEW_VERSION"
+        print_error "https://github.com/tvnoms/tvnoms-web/releases/new?tag=v$NEW_VERSION"
     fi
 else
     print_warning "GitHub CLI not available. Please create the release manually at:"
-    print_warning "https://github.com/xtreamium/xtreamium-web/releases/new?tag=v$NEW_VERSION"
+    print_warning "https://github.com/tvnoms/tvnoms-web/releases/new?tag=v$NEW_VERSION"
 fi
 
 # Clear the trap since we completed successfully

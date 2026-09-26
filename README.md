@@ -1,4 +1,4 @@
-# Xtreamium Web
+# TV Noms Web
 
 A modern React-based web application for streaming IPTV content from your subscription to a local proxy application, which launches media players like MPV or VLC to play the streams.
 
@@ -36,7 +36,7 @@ A modern React-based web application for streaming IPTV content from your subscr
 
    ```bash
    git clone <repository-url>
-   cd xtreamium-web
+   cd tvnoms-web
    ```
 
 2. **Install dependencies**
@@ -85,10 +85,10 @@ bun run preview
 ./scripts/build_docker.sh
 
 # Or with custom tag and environment
-./scripts/build_docker.sh xtreamium-web:v1.0.0 production
+./scripts/build_docker.sh tvnoms-web:v1.0.0 production
 
 # Run the container
-docker run -p 8080:80 xtreamium-web:latest
+docker run -p 8080:80 tvnoms-web:latest
 ```
 
 ## 📦 Scripts

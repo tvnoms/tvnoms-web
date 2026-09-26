@@ -6,7 +6,7 @@ import { LogsResponse } from "@/models/log-entry";
 import { DirectoryListing } from "@/models/directory-listing";
 import { env } from "@/env";
 
-export const PROXY_PORT_STORAGE_KEY = "xtreamium_proxy_port";
+export const PROXY_PORT_STORAGE_KEY = "tvnoms_proxy_port";
 
 export function getProxyBaseUrl(): string {
   const port = localStorage.getItem(PROXY_PORT_STORAGE_KEY) ?? env.VITE_PROXY_PORT;
