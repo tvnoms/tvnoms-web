@@ -21,6 +21,18 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+// Release tags are "v2.0.1" but the proxy reports "2.0.1" - compare the numeric parts only.
+const isVersionOlder = (current: string, latest: string) => {
+  const parse = (v: string) =>
+    v.trim().replace(/^v/i, "").split(/[.+-]/).slice(0, 3).map((p) => parseInt(p, 10) || 0);
+  const c = parse(current);
+  const l = parse(latest);
+  for (let i = 0; i < 3; i++) {
+    if ((c[i] ?? 0) !== (l[i] ?? 0)) return (c[i] ?? 0) < (l[i] ?? 0);
+  }
+  return false;
+};
+
 const ProxyStatus: React.FC = () => {
   // The connection itself lives in ProxyHubProvider - it is shared with the recording
   // watchers, and it outlives this widget.
@@ -43,7 +55,7 @@ const ProxyStatus: React.FC = () => {
   const isOutdated =
     !!versionsQuery.data?.current &&
     !!versionsQuery.data?.latest &&
-    versionsQuery.data.current !== versionsQuery.data.latest;
+    isVersionOlder(versionsQuery.data.current, versionsQuery.data.latest);
 
   const iconClass = React.useMemo(() => {
     return clsx(
