@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     port: 5173,
     strictPort: true,
-    allowedHosts: ["streams.dev.fergl.ie"],
+    allowedHosts: ["tvnoms.dev.fergl.ie"],
   },
   resolve: {
     alias: {
